@@ -1,21 +1,38 @@
 import bottleImg from "@/assets/neuroxen-bottle.png";
+import logoImg from "@/assets/neuroxen-logo.png";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Header */}
-      <header className="w-full px-6 md:px-12 py-5 flex items-center justify-between">
-        <a href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY" className="flex items-center gap-2">
-          <span className="inline-block h-6 w-6 rounded-full bg-gradient-to-br from-brand-orange to-brand-purple" aria-hidden />
-          <span className="text-brand-purple font-extrabold tracking-wider text-lg">NEUROXEN</span>
-        </a>
-        <a
-          href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
-          className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground font-semibold px-6 py-2.5 shadow-md hover:opacity-90 transition"
-        >
-          Order Now!
-        </a>
+      {/* Header (fixed) */}
+      <header className="fixed top-0 left-0 right-0 z-50 w-full bg-background/95 backdrop-blur border-b border-border shadow-sm">
+        <div className="w-full px-6 md:px-12 py-4 flex items-center justify-between">
+          <a
+            href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
+            className="flex flex-col items-start"
+          >
+            <img
+              src={logoImg}
+              alt="NeuroXen logo"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
+            <span
+              className="text-brand-purple font-extrabold tracking-wider uppercase"
+              style={{ fontSize: "0.60rem", paddingLeft: "55%" }}
+            >
+              Affiliate Marketing
+            </span>
+          </a>
+          <a
+            href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
+            className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground font-semibold px-6 py-2.5 shadow-md hover:opacity-90 transition"
+          >
+            Order Now!
+          </a>
+        </div>
       </header>
+      {/* Spacer for fixed header */}
+      <div aria-hidden className="h-20 md:h-24" />
 
       {/* Hero */}
       <section className="relative overflow-hidden">
