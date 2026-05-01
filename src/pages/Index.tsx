@@ -46,7 +46,7 @@ const Index = () => {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="container grid md:grid-cols-2 gap-10 items-center py-10 md:py-20">
+        <div className="container grid md:grid-cols-2 gap-10 items-center py-10">
           <div className="space-y-6 max-w-xl">
             <h2
               className="text-brand-purple uppercase text-[2.1422rem] sm:text-[2.1422rem] md:text-[2.3565rem] xl:text-[2.5707rem]"
@@ -61,8 +61,9 @@ const Index = () => {
               className="text-foreground text-[2.1422rem] sm:text-[2.1422rem] md:text-[2.3565rem] xl:text-[2.5707rem]"
               style={{
                 fontFamily: '"Poppins", sans-serif',
-                fontWeight: 700,
+                fontWeight: 600,
                 lineHeight: 1.2,
+                margin: "30px 0",
               }}
             >
               The boost your brain needs!
