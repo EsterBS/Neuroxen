@@ -1,9 +1,75 @@
 import bottleImg from "@/assets/neuroxen-bottle.png";
 import logoImg from "@/assets/neuroxen-logo.png";
+import { useEffect, useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
+
+const REDIRECT_URL = "https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY";
 
 const Index = () => {
+  const [showTerms, setShowTerms] = useState(false);
+
+  useEffect(() => {
+    setShowTerms(true);
+  }, []);
+
+  const handleRedirect = () => {
+    window.location.href = REDIRECT_URL;
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Dialog open={showTerms} onOpenChange={(open) => { if (!open) handleRedirect(); }}>
+        <DialogContent
+          className="sm:max-w-md border-brand-purple/20"
+          style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
+        >
+          <DialogHeader>
+            <DialogTitle
+              className="text-brand-purple"
+              style={{ fontFamily: '"Poppins", sans-serif', fontWeight: 700, fontSize: "1.5rem" }}
+            >
+              Terms &amp; Conditions
+            </DialogTitle>
+            <DialogDescription style={{ fontSize: "1rem", lineHeight: 1.6 }}>
+              By continuing on this page you acknowledge that this is an affiliate marketing
+              site and agree to our terms of use and privacy policy. Do you accept the terms?
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="flex-col sm:flex-row gap-2 sm:gap-2">
+            <button
+              type="button"
+              onClick={handleRedirect}
+              className="inline-flex items-center justify-center rounded-full border border-brand-purple text-brand-purple bg-transparent hover:bg-brand-purple/5 transition capitalize"
+              style={{
+                fontFamily: '"Source Sans Pro", sans-serif',
+                fontSize: "1rem",
+                fontWeight: 600,
+                lineHeight: 1.75,
+                padding: "6px 1.5em",
+                minWidth: "64px",
+              }}
+            >
+              Reject
+            </button>
+            <button
+              type="button"
+              onClick={handleRedirect}
+              className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground shadow-md hover:opacity-90 transition capitalize"
+              style={{
+                fontFamily: '"Source Sans Pro", sans-serif',
+                fontSize: "1rem",
+                fontWeight: 600,
+                lineHeight: 1.75,
+                padding: "6px 1.5em",
+                minWidth: "64px",
+              }}
+            >
+              Accept
+            </button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
       {/* Header (fixed) */}
       <header className="fixed top-0 left-0 right-0 z-50 w-full bg-background/95 backdrop-blur border-b border-border shadow-sm">
         <div className="w-full px-6 md:px-12 py-4 flex items-center justify-between">
