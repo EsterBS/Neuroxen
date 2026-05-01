@@ -5,12 +5,12 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="w-full px-6 md:px-12 py-5 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-2">
+        <a href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY" className="flex items-center gap-2">
           <span className="inline-block h-6 w-6 rounded-full bg-gradient-to-br from-brand-orange to-brand-purple" aria-hidden />
           <span className="text-brand-purple font-extrabold tracking-wider text-lg">NEUROXEN</span>
         </a>
         <a
-          href="#buy"
+          href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
           className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground font-semibold px-6 py-2.5 shadow-md hover:opacity-90 transition"
         >
           Order Now!
@@ -36,7 +36,7 @@ const Index = () => {
             </p>
             <a
               id="buy"
-              href="#"
+              href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
               className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground font-semibold text-lg px-10 py-4 shadow-lg hover:opacity-90 transition"
             >
               Buy Now
