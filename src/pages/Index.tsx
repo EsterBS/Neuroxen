@@ -20,7 +20,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Dialog open={showTerms} onOpenChange={(open) => { if (!open) handleRedirect(); }}>
         <DialogContent
-          className="sm:max-w-md border-brand-purple/20"
+          className="sm:max-w-md border-brand-purple/20 rounded-lg"
           style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
         >
           <DialogHeader>
@@ -32,7 +32,8 @@ const Index = () => {
             </DialogTitle>
             <DialogDescription style={{ fontSize: "1rem", lineHeight: 1.6 }}>
               By continuing on this page you acknowledge that this is an affiliate marketing
-              site and agree to our terms of use and privacy policy. Do you accept the terms?
+              site and agree to our terms of use and privacy policy.
+              <span className="block mt-4">Do you accept the terms?</span>
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="flex-col sm:flex-row gap-2 sm:gap-2">
