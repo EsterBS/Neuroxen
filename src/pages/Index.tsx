@@ -9,16 +9,16 @@ const Index = () => {
         <div className="w-full px-6 md:px-12 py-4 flex items-center justify-between">
           <a
             href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
-            className="flex flex-col items-start"
+            className="flex items-center gap-3"
           >
             <img
               src={logoImg}
               alt="NeuroXen logo"
-              className="h-10 md:h-12 w-auto object-contain"
+              className="h-8 w-auto object-contain"
             />
             <span
-              className="text-brand-purple font-extrabold tracking-wider uppercase"
-              style={{ fontSize: "0.60rem", paddingLeft: "55%" }}
+              className="text-brand-purple font-extrabold tracking-wider uppercase self-center"
+              style={{ fontSize: "0.60rem" }}
             >
               Affiliate Marketing
             </span>
