@@ -40,16 +40,41 @@ const Index = () => {
       <section className="relative overflow-hidden">
         <div className="container grid md:grid-cols-2 gap-10 items-center py-10 md:py-20">
           <div className="space-y-6 max-w-xl">
-            <h2 className="text-brand-purple font-extrabold tracking-widest text-xl md:text-2xl uppercase">
+            <h2
+              className="text-brand-purple uppercase"
+              style={{
+                fontFamily: '"Poppins", sans-serif',
+                fontSize: "0.875rem",
+                fontWeight: 600,
+                letterSpacing: "0.1em",
+              }}
+            >
               Neuroxen
             </h2>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-              The boost your brain needs! Focus, clarity, mental agility with every use.
+            <h1
+              className="text-foreground"
+              style={{
+                fontFamily: '"Poppins", sans-serif',
+                fontSize: "3rem",
+                fontWeight: 700,
+                lineHeight: 1.2,
+              }}
+            >
+              The boost your brain needs!
+              <br />
+              <br />
+              Focus, clarity, mental agility with every use
             </h1>
             <a
               id="buy"
               href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
-              className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground font-semibold text-lg px-10 py-4 shadow-lg hover:opacity-90 transition"
+              className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground shadow-lg hover:opacity-90 transition"
+              style={{
+                fontFamily: '"Poppins", sans-serif',
+                fontSize: "1rem",
+                fontWeight: 600,
+                padding: "1rem 2rem",
+              }}
             >
               Learn more
             </a>
