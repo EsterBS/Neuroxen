@@ -14,7 +14,8 @@ const Index = () => {
             <img
               src={logoImg}
               alt="NeuroXen logo"
-              className="h-8 w-auto object-contain"
+              className="object-contain"
+              style={{ width: "9rem", height: "100%" }}
             />
             <span
               className="text-brand-purple font-extrabold tracking-wider uppercase self-center"
