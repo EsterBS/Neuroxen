@@ -9,7 +9,8 @@ const Index = () => {
         <div className="w-full px-6 md:px-12 py-4 flex items-center justify-between">
           <a
             href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
-            className="flex items-center gap-3"
+            className="flex items-center"
+            style={{ flexDirection: "column" }}
           >
             <img
               src={logoImg}
