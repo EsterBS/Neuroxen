@@ -41,24 +41,17 @@ const Index = () => {
         <div className="container grid md:grid-cols-2 gap-10 items-center py-10 md:py-20">
           <div className="space-y-6 max-w-xl">
             <h2 className="text-brand-purple font-extrabold tracking-widest text-xl md:text-2xl uppercase">
-              Discover Neuroxen
+              Neuroxen
             </h2>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-              Your journey to enhanced{" "}
-              <span className="whitespace-nowrap">MENTAL CLARITY</span> starts here with NeuroXen.
+              The boost your brain needs! Focus, clarity, mental agility with every use.
             </h1>
-            <p className="text-base md:text-lg text-foreground/80 leading-relaxed">
-              Experience the power of NeuroXen — designed to support your brain sharpness and{" "}
-              <strong>mental clarity</strong>. The longer you use NeuroXen, the greater the benefits
-              for your brain performance and mental acuity. Stay connected to the world of sharp
-              thinking and enhanced mental focus.
-            </p>
             <a
               id="buy"
               href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
               className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground font-semibold text-lg px-10 py-4 shadow-lg hover:opacity-90 transition"
             >
-              Buy Now
+              Learn more
             </a>
           </div>
 
