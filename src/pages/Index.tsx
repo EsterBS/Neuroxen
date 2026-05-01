@@ -27,7 +27,15 @@ const Index = () => {
           </a>
           <a
             href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
-            className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground font-semibold px-6 py-2.5 shadow-md hover:opacity-90 transition"
+            className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground shadow-md hover:opacity-90 transition capitalize"
+            style={{
+              fontFamily: '"Source Sans Pro", sans-serif',
+              fontSize: "1.2rem",
+              fontWeight: 600,
+              lineHeight: 1.75,
+              padding: "6px 1.5em",
+              minWidth: "64px",
+            }}
           >
             Order Now!
           </a>
@@ -41,39 +49,37 @@ const Index = () => {
         <div className="container grid md:grid-cols-2 gap-10 items-center py-10 md:py-20">
           <div className="space-y-6 max-w-xl">
             <h2
-              className="text-brand-purple uppercase"
+              className="text-brand-purple uppercase text-[2.1422rem] sm:text-[2.1422rem] md:text-[2.3565rem] xl:text-[2.5707rem]"
               style={{
                 fontFamily: '"Poppins", sans-serif',
-                fontSize: "0.875rem",
-                fontWeight: 600,
-                letterSpacing: "0.1em",
+                fontWeight: 700,
               }}
             >
               Neuroxen
             </h2>
             <h1
-              className="text-foreground"
+              className="text-foreground text-[2.1422rem] sm:text-[2.1422rem] md:text-[2.3565rem] xl:text-[2.5707rem]"
               style={{
                 fontFamily: '"Poppins", sans-serif',
-                fontSize: "3rem",
                 fontWeight: 700,
                 lineHeight: 1.2,
               }}
             >
               The boost your brain needs!
               <br />
-              <br />
               Focus, clarity, mental agility with every use
             </h1>
             <a
               id="buy"
               href="https://getneuroxen.com/#aff=EliteBizScale&cam=CAMPAIGNKEY"
-              className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground shadow-lg hover:opacity-90 transition"
+              className="inline-flex items-center justify-center rounded-full bg-brand-orange text-brand-orange-foreground shadow-lg hover:opacity-90 transition capitalize"
               style={{
-                fontFamily: '"Poppins", sans-serif',
-                fontSize: "1rem",
-                fontWeight: 600,
-                padding: "1rem 2rem",
+                fontFamily: '"Source Sans Pro", sans-serif',
+                fontSize: "1.6rem",
+                fontWeight: 700,
+                lineHeight: 1.75,
+                padding: "8px 2em",
+                minWidth: "64px",
               }}
             >
               Learn more
